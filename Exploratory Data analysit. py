@@ -1,0 +1,23 @@
+import pandas as pd
+
+data = {
+    "Student": ["Ravi", "Sita", "Ram", "Rani", "Kiran"],
+    "Marks": [75, 88, 60, 95, 82]
+}
+
+df = pd.DataFrame(data)
+
+print("Student Dataset:")
+print(df)
+
+print("\nData Information:")
+print(df.info())
+
+print("\nAverage Marks:", df["Marks"].mean())
+print("Maximum Marks:", df["Marks"].max())
+print("Minimum Marks:", df["Marks"].min())
+
+print("\nMissing Values:")
+print(df.isnull().sum())
+
+print("\nEDA Analysis Completed!")
